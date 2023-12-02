@@ -5,9 +5,18 @@ import java.util.*;
 public class Trebuchet {
     public static void main(String[] args) throws FileNotFoundException {
         // Parameter: get the path of the file
-        File trebuchetFile = new File("C:\\Users\\szabo\\Downloads\\Coding\\adventOfCode\\.idea\\.com\\szabo\\2023\\Day1");
+        File trebuchetFile = new File("C:\\Users\\szabo\\Downloads\\Coding\\adventOfCode\\.idea\\.com\\szabo\\2023\\Day1\\trebuchet.txt");
         Scanner scanner = new Scanner(trebuchetFile);
-        String[] trebuchet = new String[scanner.nextInt()];
+
+        // Read the number of lines from the file
+        int numberOfLines = scanner.nextInt();
+        scanner.nextLine();
+        String[] trebuchet = new String[numberOfLines];
+
+        // Read lines from the file and store them in the array
+        for(int i = 0; i < numberOfLines; i++) {
+            trebuchet[i] = scanner.nextLine();
+        }
 
         int total = 0;
         int firstDigit = 0;
