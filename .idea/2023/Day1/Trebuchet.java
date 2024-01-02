@@ -5,7 +5,7 @@ import java.util.*;
 public class Trebuchet {
     public static void main(String[] args) throws FileNotFoundException {
         // Parameter: get the path of the file
-        File trebuchetFile = new File("C:\\Users\\szabo\\Downloads\\Coding\\adventOfCode\\.idea\\.com\\szabo\\2023\\Day1\\trebuchet.txt");
+        File trebuchetFile = new File("C:\\Users\\szabo\\Downloads\\Coding\\adventOfCode\\.idea\\2023\\Day1\\trebuchet.txt");
         Scanner scanner = new Scanner(trebuchetFile);
 
         // Read the number of lines from the file
